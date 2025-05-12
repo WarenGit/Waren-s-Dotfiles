@@ -1,0 +1,120 @@
+@import "/home/Camilo/.cache/wal/colors-waybar.css";
+
+/* REPLACE WITH YOUR USER */
+
+* {
+    font-family: JetBrainsMono, awesome-terminal-fonts;
+	font-size: 18px;
+	padding: 2px 4px;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+window#waybar {
+	border-radius: 12px;
+	background-color: @background;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+window#waybar.termite {
+	background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+	background-color: #000000;
+	border: none;
+}
+
+button {
+	box-shadow: inset 0 -3px transparent;
+	border: none;
+	border-radius: 0;
+}
+
+button:hover {
+	background-color: @color2;
+}
+
+#workspaces {
+	padding: 2px 2px;
+	margin: 4px 0px;
+	color: @foreground;
+	background: @color2;
+	border-radius: 8px;
+}
+
+#workspaces button {
+	padding: 0 2px;
+	border-radius: 8px;
+}
+
+#workspaces button:hover {
+	background-color: @color9;
+}
+
+#workspaces button.focused {
+	background-color: @foreground;
+}
+
+#workspaces button.active {
+	background-color: @color6;
+}
+
+#workspaces button.urgent {
+	background-color: @foreground;
+}
+
+#custom-distrologo,
+#tray,
+#custom-media,
+#cpu,
+#temperature,
+#network,
+#backlight,
+#pulseaudio,
+#battery{
+	margin: 4px 0px;
+	padding: 2px 4px;
+	color: @color4;
+	border-radius: 8px;
+	background-color: transparent;
+}
+
+@keyframes blink {
+	to {
+		background-color: #ffffff;
+		color: #000000;
+	}
+}
+#battery.critical:not(.charging) {
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-distrologo:hover,
+#tray:hover,
+#custom-media:hover,
+#cpu:hover,
+#temperature:hover,
+#network:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#battery:hover {
+	background-color: @color8;
+}
+
+#clock {
+	color: @color4;
+}
+
+#custom-distrologo {
+	font-size: 25px;
+}

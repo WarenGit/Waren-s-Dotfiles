@@ -1,0 +1,43 @@
+@import "/home/Camilo/.cache/wal/colors-waybar.css";
+/* REPLACE WITH YOUR USER */
+
+* {
+	font-family: JetBrainsMono, awesome-terminal-fonts;
+	font-size: 18px;
+	padding: 2px 4px;
+	transition-property: background-color;
+	transition-duration: 0;
+	color: @color4;
+}
+
+#window {
+	border-radius: 12px;
+	margin: 0px;
+	background-color: @background;
+}
+
+#input {
+	padding: 4px;
+	margin: 4px;
+	padding-left: 20px;
+	border: none;
+	background-color: @color6;
+	color: @background;
+	margin: 10px;
+}
+
+#input:focus {
+	box-shadow: none;
+}
+
+#outer-box {
+	border-radius: 12px;
+	background-color: @background;
+	margin: 0px;
+}
+
+#entry:selected {
+	margin: 0px 0px;
+	border-radius: 12px;
+	background-color: @color1;
+}
