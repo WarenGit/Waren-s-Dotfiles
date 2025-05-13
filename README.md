@@ -14,7 +14,7 @@ My first ever Hyprland + Arch rice!
 - **[python-pywal16](https://github.com/eylles/pywal16)** - Color palette generator
 
 ## Installation
-Install the packages I use, and just copy the dotfiles and place them in the **$HOME** folder. <br>
+Install the packages I use, copy the dotfiles and place them in the **$HOME** folder. <br>
 **IMPORTANT:** You have to manually replace the paths by putting your username instead of mine in:
 
 ```
